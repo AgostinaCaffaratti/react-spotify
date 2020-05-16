@@ -1,0 +1,61 @@
+.App{
+    background: #282828;
+    font-family: 'Nunito', sans-serif;
+    color: #e0e0e0;
+}
+
+
+.container-header{
+    height: 20%;
+    border: 1px solid #fdfdfd;
+    padding: 2%;
+    width: 96%;
+    &__logo{
+        margin-left: 45%;
+        height: 40px;
+        width: 40px;
+       
+    }
+    &__loop{
+        height: 30px;
+        width: 30px;
+        margin-left: 30%;
+        margin-bottom:2px ;
+
+    }
+    &__search{
+        display: none;
+        
+    }
+}
+
+@media (min-width: 1280px){
+
+    .container-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    &__logo{
+        margin-left: 1%;
+        height: 40px;
+        width: 40px; 
+    }
+    &__loop{
+    display: none;
+
+    }
+    &__search{
+        display: block;
+        width: 30%;
+        
+        &--input{
+            width: 100%;
+            border-radius: 5px  5px
+        }
+       
+    }
+
+
+    }
+}
