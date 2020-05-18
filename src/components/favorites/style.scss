@@ -1,6 +1,11 @@
+@import './../../mixin/card.scss';
+
 .container-favourite {
-  border: 1px solid #fdfdfd;
-  padding: 5px;
+  
+  padding: 5px 10px 5px 10px;
+  @include for-desktop-up {
+    padding: 1% 15% 1% 15%;
+  }
 
   &__title {
     font-size: 25px;
@@ -21,7 +26,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 }

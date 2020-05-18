@@ -1,7 +1,13 @@
+@import './../../mixin/card.scss';
+
 .container-welcome {
-  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 80%;
-  border: 1px solid #fdfdfd;
+  @include for-desktop-up {
+    padding: 1% 15% 1% 15%
+  }
+  
   &__title {
     margin-bottom: 1px;
     font-size: 17px;
@@ -14,9 +20,9 @@
     margin-bottom: 40px;
   }
   &__form {
-    width: 100%;
-    border: 1px solid #fdfdfd;
-    padding: 2px;
+    width: 98%;
+    
+    
 
     &--input {
       width: 100%;

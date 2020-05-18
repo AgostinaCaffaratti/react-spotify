@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "./../components/layout";
+import LayoutHome from "../components/layout-home";
 import Welcome from "./../components/welcome.js";
 import Favorites from "./../components/favorites";
 
 const Home = () => (
-  <Layout>
+  <LayoutHome>
     <Welcome />
     <Favorites />
-  </Layout>
+  </LayoutHome>
 );
 
 export default Home;
