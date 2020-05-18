@@ -1,0 +1,27 @@
+.container-favourite {
+  border: 1px solid #fdfdfd;
+  padding: 5px;
+
+  &__title {
+    font-size: 25px;
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+  &__song-title {
+    display: none;
+    @include for-desktop-up {
+      display: flex;
+      font-size: 25px;
+    }
+  }
+
+  .container__cards {
+    @include for-desktop-up {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
