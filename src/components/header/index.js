@@ -25,10 +25,13 @@ const Header = () => {
           alt="logo"
         ></img>
         <NavBar onClick={handleClick} />
+      
       </div>
-      { search === true && <div className="container-header__form">
-         <Form />
-      </div>}
+      {search === true && (
+        <div className="container-header__form">
+          <Form />
+        </div>
+      )}
     </header>
   );
 };

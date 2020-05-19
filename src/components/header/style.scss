@@ -1,3 +1,5 @@
+@import './../../mixin/card.scss';
+
 .container-header{
     padding: 5px 0px;
     display: flex;
@@ -5,9 +7,8 @@
     justify-content: space-between;
     height: 10%;
   background:#383737;
-  &--logo{
-      margin-left: 1px;
-  }
+ 
+    
   &__form{
       height: 20%;
       z-index: 1;
@@ -15,4 +16,9 @@
       padding: 10px 10px 10px 10px;
 
   }
+  &__nav{
+      display: flex;
+      flex-direction: column;
+  }
+ 
 }

@@ -1,10 +1,13 @@
-
+@import './../../mixin/card.scss';
 
 .navbar__button{
     background: #383737;
     border-style: none;
     width: 45px;
     height: 45px;
+    @include for-desktop-up{
+        display: none;
+    }
     &--sicon{
         width: 25px;
     height: 25px;
