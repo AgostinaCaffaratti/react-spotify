@@ -1,5 +1,5 @@
 import React from "react";
-import LayoutHome from "../components/layout-home";
+import LayoutHome from './../components/layouts/layout-home';
 import Welcome from "./../components/welcome.js";
 import Favorites from "./../components/favorites";
 

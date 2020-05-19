@@ -1,6 +1,6 @@
-import React, { Children, Fragment } from "react";
-import HeaderHome from "../header-Home/index.js";
-import Footer from '../footer'
+import React, { Fragment } from "react";
+import HeaderHome from "../../header-Home/index.js";
+import Footer from './../../footer'
 
 const LayoutHome = (props) => (
     <Fragment>
