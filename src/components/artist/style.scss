@@ -1,0 +1,24 @@
+@import "./../../mixin/card.scss";
+.artist-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+
+  &__img {
+    @include img;
+    @include for-desktop-up {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__content {
+    @include info;
+    &--genre {
+      margin-top: 7px;
+    }
+    &--title {
+      margin: 1px;
+    }
+  }
+}

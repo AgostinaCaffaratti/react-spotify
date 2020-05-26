@@ -1,15 +1,13 @@
-import React, {  Fragment } from "react";
-import Header from "./../../header";
-import Footer from './../../footer'
+import React, { Fragment } from "react";
+import HeaderGral from "./../../header-gral";
+import Footer from "./../../footer";
 
 const LayoutGral = (props) => (
-    <Fragment>
-<Header/>
-{props.children}
-<Footer/>
-</Fragment>
-)
-
-
+  <Fragment>
+    <HeaderGral />
+    {props.children}
+    <Footer />
+  </Fragment>
+);
 
 export default LayoutGral;

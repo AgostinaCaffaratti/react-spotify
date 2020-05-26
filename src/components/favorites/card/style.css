@@ -1,0 +1,76 @@
+.container__card {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #3b3a3a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3%;
+  margin: 0px 0px 5px 0px;
+  height: 30%;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container__card {
+    width: 45%;
+    padding: 1px 1px 1px 15px;
+  }
+}
+
+.container__card--img img {
+  width: 100px;
+  height: 100px;
+}
+
+.container__card__info {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.container__card__info--title {
+  font-size: 20px;
+  margin-top: -10px;
+  text-decoration: none;
+  color: #e0e0e0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (min-width: 1200px) {
+  .container__card__info--title {
+    display: none;
+  }
+}
+
+.container__card__info--song-title {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .container__card__info--song-title {
+    display: block;
+    font-size: 25px;
+  }
+}
+
+.container__card__info--content {
+  color: #e0e0e0;
+  width: 90%;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container__card__info--content {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

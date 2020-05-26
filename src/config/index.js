@@ -1,9 +1,18 @@
 export const Header = {
-    'authorization': "Bearer BQDyOtBHW0-COxwxsil2Iv29srwqc6p4J39GnB59UZttQrhJAKbDNGxPc3VaLchhPDpVpT6Z7DP5-IfXhH3kqXX8MnBnES5phnLftigq2IzMYobNuD7PyMzxhE0myfq8TyirYhwVUqFkpnvqhId-fN_q6O9ARAhJ1TEn1OOansJQi5EjgSLjCav1ElaHe-yb3ZK1oFm4CrNEmxyPC3fuV0d2YXO780uEHCnVahbMss1m1JprxR2MUSyXIk38VxJVc3Pr0_ftA9alUhiT9w",
-    'Content-Type': 'application/json'
-}
+  authorization:
+    " Bearer BQDosxt62LcJNDIfI4gv1Cc9v7nqkLjc4QO5zCRuEZXkTG-62C-IWjhkgqDkK7-oMdx4kIIqSzGfPH_TisAkveVx8Q_G4NwfMPWPRp9XkTHeLd4izW738zzsFTSRgHBueKaLMRd5RadWJk_dNtsx2GBI1kmxmVvxPXG-IB07XZ9IF7XtXnq_YFc_hTc40q2YE2DlUzMb7OKlwqRqQJ7tNPX0b_Og6X3_Yvf5DxBCqaGqIqGHHy9dlQLh9Lp_AX4XxjtuVArp_R3Gt1vsyw",
+  "Content-Type": "application/json",
+};
 
 export const ArtistEndpoint = {
-    url: 'https://api.spotify.com/v1/search',
-    type: 'artist'
-}
+  url: "https://api.spotify.com/v1/search",
+  type: "artist",
+};
+
+export const IdArtistEndpoint = {
+  url: "https://api.spotify.com/v1/artists",
+};
+
+export const AlbumEndpoint = {
+  url: "https://api.spotify.com/v1/albums",
+};

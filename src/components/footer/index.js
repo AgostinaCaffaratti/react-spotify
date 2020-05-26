@@ -1,11 +1,10 @@
-import React from 'react'
-import './style.scss'
+import React from "react";
+import "./style.scss";
 
 const Footer = () => (
-    <div className='container-footer'>
-        <p> spotiapp </p>
+  <footer className="container-footer">
+    <h4> SpotiSearch </h4>
+  </footer>
+);
 
-    </div>
-)
-
-export default Footer
+export default Footer;

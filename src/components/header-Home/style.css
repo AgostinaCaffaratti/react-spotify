@@ -1,0 +1,13 @@
+.container-header {
+  height: 10%;
+  background: #383737;
+  width: 100%;
+}
+
+.container-header__logo {
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+.artists-container {
+  margin-top: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80%;
+  min-height: calc(100vh - 65px - 100px);
+}
+
+@media (min-width: 1200px) {
+  .artists-container {
+    padding: 1% 15% 1% 15%;
+    margin: 0px;
+  }
+}
+
+.artists-container__form {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .artists-container__form {
+    display: block;
+    width: 80%;
+  }
+}
+
+.artists-container__nav {
+  margin-top: 35px;
+}
+
+.artists-container__cards {
+  margin-top: 1%;
+}
+
+@media (min-width: 1200px) {
+  .artists-container__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.artists-container__nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.artists-container__nav__list--link a {
+  text-decoration: none;
+}
+
+.artists-container__nav__list--p {
+  margin: 0px 0px 0px 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+.song-container__tables__album {
+  width: 90%;
+  background: #383737;
+  margin: 50px auto;
+}
+
+.song-container__tables__album--header {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background: #4e4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.song-container__tables__album--song {
+  margin-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 96% 4%;
+      grid-template-columns: 96% 4%;
+  grid-auto-rows: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.song-container__tables__album--song:nth-child(even) {
+  background: #3d3c3c;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */

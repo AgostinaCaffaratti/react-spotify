@@ -1,24 +1,21 @@
-@import './../../mixin/card.scss';
+@import "./../../mixin/card.scss";
 
-.navbar__button{
-    background: #383737;
-    border-style: none;
-    width: 45px;
-    height: 45px;
-    @include for-desktop-up{
-        display: none;
-    }
-    &--sicon{
-        width: 25px;
+.navbar__button {
+  background: #383737;
+  border-style: none;
+  width: 45px;
+  height: 45px;
+  @include for-desktop-up {
+    display: none;
+  }
+  &--sicon {
+    width: 25px;
     height: 25px;
-
-
-    }
-    &--aicon{
-        margin-top: -10px;
-        width: 15px;
+  }
+  &--aicon {
+    position: absolute;
+    width: 15px;
     height: 15px;
-
-
-    }
+    transform: translateY(150%);
+  }
 }

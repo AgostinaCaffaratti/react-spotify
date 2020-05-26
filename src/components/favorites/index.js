@@ -1,6 +1,6 @@
 import React from "react";
 import FavoriteCard from "./../favorites/card";
-import './style.scss'
+import "./style.scss";
 
 const Favorites = () => (
   <section className="container-favourite">

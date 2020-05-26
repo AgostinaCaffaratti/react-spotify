@@ -1,22 +1,27 @@
-@import './../../mixin/card.scss';
+@import "./../../mixin/card.scss";
 
-.container-artists__card {
+.container-artists {
+  @include container-card;
   @include for-desktop-up {
-    width: 45%;
-    padding: 15px 1px 15px 15px;
+    width: 46%;
+
+    text-decoration: none;
   }
 
-  @include container-card;
-  &--img {
+  &__card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
     img {
       @include img;
     }
-  }
-  &__info {
-    @include info;
-    &--title {
-      @include title;
-      
+
+    &__info {
+      @include info;
+      &--title {
+        @include title;
+      }
     }
   }
 }

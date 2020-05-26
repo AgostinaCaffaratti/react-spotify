@@ -9,7 +9,6 @@ const HeaderHome = () => (
       src={process.env.PUBLIC_URL + "/assets/logo.png"}
       alt="logo"
     ></img>
-    
   </header>
 );
 

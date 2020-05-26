@@ -1,42 +1,39 @@
-@import './../../mixin/card.scss';
-.artists-container{
-    margin-top: 10%;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 80%;
-    @include for-desktop-up {
-      padding: 1% 15% 1% 15%;
-      margin:0px;
+@import "./../../mixin/card.scss";
+
+.artists {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  min-height: 100vh;
+  @include for-desktop-up {
+    padding: 1% 15% 1% 15%;
+  }
+}
+.artists-container__nav {
+  margin-top: 30px;
+  @include for-desktop-up {
+    margin-top: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    &--p {
+      margin: 0px 10px 0px 0px;
     }
+  }
+}
 
-    &__nav{
-        margin-top: 35px;
-    }
-
-    &__cards {
-        margin-top: 1%;
-        @include for-desktop-up {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-      }
-
-      &__nav__list{
-          display: flex;
-          flex-direction: row;
-          list-style: none;
-          margin: 0px;
-          padding: 0px;
-          &--link{
-              a{
-             text-decoration: none; 
-              }
-          }
-          &--p{
-              margin: 0px 0px 0px 10px;
-          }
-         
-      }
+.artists-container__cards {
+  margin-top: 15px;
+  @include for-desktop-up {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

@@ -1,0 +1,33 @@
+@import "./../../mixin/card.scss";
+
+.container-album {
+  @include container-card;
+  @include for-desktop-up {
+    width: 46%;
+
+    text-decoration: none;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    img {
+      @include img;
+    }
+
+    &__info {
+      @include info;
+      &--title {
+        @include title;
+      }
+      &--title {
+        @include title;
+      }
+      &--year {
+        @include content;
+      }
+    }
+  }
+}

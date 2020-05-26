@@ -1,12 +1,13 @@
 import React from "react";
-import LayoutHome from './../components/layouts/layout-home';
+import LayoutHome from "./../components/layouts/layout-home";
 import Welcome from "./../components/welcome.js";
-import Favorites from "./../components/favorites";
+import "./style.scss";
 
 const Home = () => (
   <LayoutHome>
-    <Welcome />
-    <Favorites />
+    <div className="home-container">
+      <Welcome />
+    </div>
   </LayoutHome>
 );
 

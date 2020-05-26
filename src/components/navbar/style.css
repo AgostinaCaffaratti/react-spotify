@@ -1,0 +1,24 @@
+.navbar__button {
+  background: #383737;
+  border-style: none;
+  width: 45px;
+  height: 45px;
+}
+
+@media (min-width: 1200px) {
+  .navbar__button {
+    display: none;
+  }
+}
+
+.navbar__button--sicon {
+  width: 25px;
+  height: 25px;
+}
+
+.navbar__button--aicon {
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,31 @@
 @import "./mixin/card.scss";
+*{
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+html {
+  
+  width: 100%;
+  
+}
+
+body{
+ 
+   margin:0;
+   padding:0;
+   height: 100%;
+ }
 
 .App {
   background: #282828;
   font-family: "Nunito", sans-serif;
   color: #e0e0e0;
+  
   
 }
 

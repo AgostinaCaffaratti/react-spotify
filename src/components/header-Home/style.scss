@@ -1,41 +1,17 @@
+@import "./../../mixin/card.scss";
+
 .container-header {
-  height: 10%;
-  background:#383737;
-  
-  width: 100%;
+  height: 45px;
+  background: #383737;
+  width: 98%;
+  padding: 1%;
+  @include for-desktop-up {
+    height: 35px;
+  }
+
   &__logo {
     margin-left: 45%;
     height: 40px;
     width: 40px;
-  }
-  &__loop {
-    height: 30px;
-    width: 30px;
-    margin-left: 30%;
-    margin-bottom: 2px;
-  }
-  &__search {
-    display: none;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-header {
-    &__logo {
-      height: 40px;
-      width: 40px;
-    }
-    &__loop {
-      display: none;
-    }
-    &__search {
-      display: none;
-      width: 30%;
-
-      &--input {
-        width: 100%;
-        border-radius: 5px 5px;
-      }
-    }
   }
 }

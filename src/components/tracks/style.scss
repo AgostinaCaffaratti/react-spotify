@@ -1,0 +1,37 @@
+@import "./../../mixin//card.scss";
+
+.song-container__tables__album {
+  background: #383737;
+  margin-bottom: 20px;
+
+  &--header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #4e4d4d;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 98%;
+    padding-left: 2%;
+  }
+  &--song {
+    display: grid;
+    grid-template-columns: 92% 8%;
+    @include for-desktop-up {
+      grid-template-columns: 95% 5%;
+    }
+    grid-auto-rows: 40px;
+    align-items: center;
+    cursor: pointer;
+    width: 98%;
+    padding-left: 2%;
+  }
+  &--song:nth-child(even) {
+    background: #3d3c3c;
+  }
+}
+img {
+  width: 20px;
+  height: 20px;
+}

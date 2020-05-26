@@ -1,0 +1,44 @@
+@import "./../../mixin/card.scss";
+
+.artist {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  min-height: 100vh;
+  @include for-desktop-up {
+    padding: 1% 15% 1% 15%;
+  }
+  min-height: calc(100vh);
+}
+.artist-container {
+  &__nav {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    @include for-desktop-up {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+      &--p {
+        margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+
+  &__cards {
+    margin-top: 15px;
+    @include for-desktop-up {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
