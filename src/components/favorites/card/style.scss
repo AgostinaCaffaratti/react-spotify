@@ -2,8 +2,7 @@
 
 .container__card {
   @include for-desktop-up {
-    width: 45%;
-    padding: 1px 1px 1px 15px;
+    width: 46%;
   }
 
   @include container-card;
@@ -14,6 +13,7 @@
   }
   &__info {
     @include info;
+    width: 100%;
     &--title {
       @include title;
       @include for-desktop-up {

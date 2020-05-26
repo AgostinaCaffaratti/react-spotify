@@ -5,6 +5,7 @@ const Tracks = ({ album = [] }) => {
   const tracks = album.tracks && album.tracks.items;
   console.log(tracks);
 
+  const [fav, setFav] = useState(false);
   const [state, setState] = useState(
     {
       playingUrl: "",
@@ -65,6 +66,19 @@ const Tracks = ({ album = [] }) => {
 
   console.log(tracksCd2);
 
+  const handleFav = (track) => {
+    let songID = track;
+    console.log(track);
+
+    let songSaved = JSON.parse(localStorage.getItem("songsIDs")) || [];
+
+    let newAndPreviousSong = songSaved.concat(songID);
+
+    localStorage.setItem("songsIDs", JSON.stringify(newAndPreviousSong));
+
+    setFav(!fav);
+  };
+
   return (
     <Fragment>
       <div className="song-container__tables__album">
@@ -76,9 +90,15 @@ const Tracks = ({ album = [] }) => {
             <div className="song-container__tables__album--song">
               <p onClick={() => playAudio(track && track.preview_url)}>{track && track.name} </p>
               <img
+                key={track && track.id}
                 className="song-container__tables__album--star"
-                src={process.env.PUBLIC_URL + "/assets/star.png"}
+                src={
+                  fav
+                    ? process.env.PUBLIC_URL + "/assets/starfill.png"
+                    : process.env.PUBLIC_URL + "/assets/star.png"
+                }
                 alt="star"
+                onClick={() => handleFav(track.id)}
               ></img>
             </div>
           ))}
@@ -93,9 +113,15 @@ const Tracks = ({ album = [] }) => {
             <div className="song-container__tables__album--song">
               <p onClick={() => playAudio(track && track.preview_url)}>{track && track.name}</p>
               <img
+                key={track && track.id}
                 className="song-container__tables__album--star"
-                src={process.env.PUBLIC_URL + "/assets/star.png"}
+                src={
+                  fav
+                    ? process.env.PUBLIC_URL + "/assets/starfill.png"
+                    : process.env.PUBLIC_URL + "/assets/star.png"
+                }
                 alt="star"
+                onClick={() => handleFav(track.id)}
               ></img>
             </div>
           ))}

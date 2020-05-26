@@ -1,6 +1,6 @@
 export const Header = {
   authorization:
-    " Bearer BQDosxt62LcJNDIfI4gv1Cc9v7nqkLjc4QO5zCRuEZXkTG-62C-IWjhkgqDkK7-oMdx4kIIqSzGfPH_TisAkveVx8Q_G4NwfMPWPRp9XkTHeLd4izW738zzsFTSRgHBueKaLMRd5RadWJk_dNtsx2GBI1kmxmVvxPXG-IB07XZ9IF7XtXnq_YFc_hTc40q2YE2DlUzMb7OKlwqRqQJ7tNPX0b_Og6X3_Yvf5DxBCqaGqIqGHHy9dlQLh9Lp_AX4XxjtuVArp_R3Gt1vsyw",
+    "Bearer BQD0egsmOw0FDpuxvDmPLlV7pjBMo3C12Nt7yM2QgrIPuf6U58lhLX-aHgg0MyI2WFHJhu96po7KGHGuqW2wuqWLP0MAxQr1jiTUuanurixA0vR9_BjyPIm7C0z4tUo0Pnk5ImjTJQmoHvCSO02SugnzUnD35dGhRAIovzqeHQlbf4vcF4_dz_Po0YRYT2_cKNVz3rc9T_ZOQWJofiRMcOGxWpXSv2ixAf8z-i7Ls7FbZ4g1enuk9V8ckJNTjIa94h4dVfz-FzsngYHkkQ",
   "Content-Type": "application/json",
 };
 
@@ -15,4 +15,8 @@ export const IdArtistEndpoint = {
 
 export const AlbumEndpoint = {
   url: "https://api.spotify.com/v1/albums",
+};
+
+export const SongsEndpoint = {
+  url: "https://api.spotify.com/v1/tracks?ids=",
 };
