@@ -5,13 +5,14 @@ import { SongsEndpoint, Header } from "./../../config";
 
 const Favorites = () => {
   let songIDS = localStorage.getItem("songsIDs");
-  console.log(typeof songIDS);
-  let ids = JSON.parse(songIDS);
+  if (SongsIDS) {
+    console.log(typeof songIDS);
+    let ids = JSON.parse(songIDS);
 
-  console.log(ids);
-  let Trackstring = ids.toString();
-  console.log(Trackstring);
-
+    console.log(ids);
+    let Trackstring = ids && ids.toString();
+    // console.log(Trackstring);
+  }
   const [tracks, setTracks] = useState();
 
   useEffect(() => {
